@@ -1,5 +1,6 @@
 # traefik.yml
 
+```yml
 entryPoints:
   web:
     address: ":80"
@@ -21,10 +22,12 @@ providers:
   docker:
     exposedByDefault: false
 
+```
 
 
 
 # docker compose
+```yml
 services:
   reverse-proxy:
     image: traefik:v3.1
@@ -58,3 +61,4 @@ services:
 networks:
   traefik:
     external: true
+```
